@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Member</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add Member</h1>
+    <form action="/Members/add" method="POST">
+
+        <label>First Name: <input type="text" name="firstname" required></label><br>
+        <label>Last Name: <input type="text" name="lastname" required></label><br>
+        <label>Date of Birth: <input type="date" name="dob" required></label><br>
+        <label>Phone Numbers (comma separated): <input type="text" name="phoneNumbers" required></label><br>
+        <label>Addresses (comma separated): <input type="text" name="addresses" required></label><br>
+        <button type="submit">Add Member</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('print message in browser console in Add Member Page');
+            alert('Hi , testing Client javascript render in Add Member Page');
+        })
+    </script>
+</body>
+
+</html>
